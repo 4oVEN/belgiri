@@ -1,0 +1,13 @@
+.carousel{
+  padding: 80px 0;
+  height: 1000px;
+  background: url('../img/mobile_bg.png') no-repeat 50%/cover;
+  &__inner{
+    position: relative;
+    margin: 0 auto;
+    img{
+      max-height: 650px;
+      width: 100%;
+    }
+  }
+}

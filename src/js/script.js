@@ -9,3 +9,9 @@ hamburger.addEventListener('click', () => {
 close.addEventListener('click', () => {
   menu.classList.remove('active');
 });
+
+$(document).ready(function(){
+  $('.carousel__inner').slick();
+    
+ 
+});
