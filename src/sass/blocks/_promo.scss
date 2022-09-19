@@ -1,0 +1,18 @@
+.promo{
+  min-height: 100vh;
+  position: relative;
+  background: url('../img/bg.jpg') no-repeat 50%/cover;
+  &__wrapper{
+    padding-top: 205px;
+    text-align: right;
+  }
+  &__title{
+    font-size: 48px;
+    color: #fff;
+  }
+  &__descr{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #fff;
+  }
+}
