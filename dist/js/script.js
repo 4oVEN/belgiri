@@ -11,7 +11,11 @@ close.addEventListener('click', () => {
 });
 
 $(document).ready(function(){
-  $('.carousel__inner').slick();
-    
+  $('.carousel__inner').slick({
+    speed: 1200,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+ 
  
 });
