@@ -5,6 +5,18 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 50px;
+    margin-bottom: 20px;
   }
-  &__
+  &__subtitle{
+    font-size: 22px;
+    line-height: 40px;
+    padding-bottom: 15px;
+  }
+  &__text{
+    text-align: justify;
+  }
+  &__news{
+    height: 630px;
+    width: 100%;
+  }
 }
