@@ -15,13 +15,30 @@ $(document).ready(function(){
     speed: 1200,
     autoplay: true,
     autoplaySpeed: 2000,
+    dots: true,
   });
  
-  
+  // Modal
   $('[data-modal=registration]').on('click', function(){
     $('.overlay, #application').fadeIn('slow');
   });
   $('.modal__close').on('click', function(){
     $('.overlay, #application, #thanks').fadeOut('slow');
+  });
+
+  $('form').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: 'mailer/smart.php',
+      data: $(this).serialize()
+    }).done(function(){
+      $(this).find('input').val('');
+      $('#application').fadeOut();
+      $('.overlay, #thanks').fadeIn('slow');
+
+      $('form').trigger('reset');
+    });
+    return false;
   });
 });
