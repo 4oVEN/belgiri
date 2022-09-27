@@ -17,5 +17,11 @@ $(document).ready(function(){
     autoplaySpeed: 2000,
   });
  
- 
+  
+  $('[data-modal=registration]').on('click', function(){
+    $('.overlay, #application').fadeIn('slow');
+  });
+  $('.modal__close').on('click', function(){
+    $('.overlay, #application, #thanks').fadeOut('slow');
+  });
 });
