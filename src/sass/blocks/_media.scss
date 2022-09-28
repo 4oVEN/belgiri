@@ -1,0 +1,22 @@
+@media (max-width: 550px){
+  .modal__close{
+    top: 7px;
+    right: 0;
+  }
+}
+
+@media (max-width: 425px){
+  .promo__title{
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .button_main{
+    display: block;
+    width: 290px;
+    margin: 0 auto;
+  }
+  .modal{
+    width: 290px;
+    padding: 20px;
+  }
+}

@@ -35,9 +35,9 @@
         <nav>
             <ul class="menu__list">
                 <li class="menu__link"><a href="#news">НОВОСТИ</a></li>
-                <li class="menu__link"><a href="#">СОРЕВНОВАЯ</a></li>
-                <li class="menu__link"><a href="#">НОРМАТИВЫ</a></li>
-                <li class="menu__link"><a href="#">РЕКОРДЫ</a></li>
+                <li class="menu__link"><a href="#calendar">СОРЕВНОВАЯ</a></li>
+                <li class="menu__link"><a href="#standards">НОРМАТИВЫ</a></li>
+                <li class="menu__link"><a href="#records">РЕКОРДЫ</a></li>
                 <li class="menu__link"><a href="#">РАЗВИТИЕ</a></li>
                 <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
             </ul>
@@ -89,13 +89,19 @@
         <div>
           <img src="img/slide5.jpg" alt="slide">
         </div>
+        <div>
+          <img src="img/slide6.jpg" alt="slide">
+        </div>
+        <div>
+          <img src="img/slide7.jpg" alt="slide">
+        </div>
       </div>
     </div>
   </div>
 
   <section class="news" id="news">
     <div class="container">
-      <h2 class="news__title">НОВОСТИ</h2>
+      <h2 class="title">НОВОСТИ</h2>
       <div class="news__subtitle">Ближайшие соревнования .. ноября 2022 года</div>
       <p class="news__text">ЧЕМПИОНАТ РЕСПУБЛИКИ БЕЛАРУСЬ <br>
         Соревновательные упражнения: толчок, рывок.
@@ -157,7 +163,12 @@
 				<option value="Первенство РБ">Первенство РБ</option>
 				<option value="Первенство района">Первенство района</option>
 			</select>
-			<input required name="name" placeholder="Ваше имя и фамилия" type="text">
+      <select name="exercise" id="">
+				<option value="0">Вид упражнения</option>
+				<option value="Толчок">Толчок</option>
+				<option value="Рывок">Рывок</option>
+			</select>
+			
 			<select name="kettlebell_weight" id="">
 				<option value="1">Вес гири, кг</option>
 				<option value="32">32</option>
@@ -166,8 +177,10 @@
 				<option value="16">16</option>
 				<option value="12">12</option>
 				<option value="8">8</option>
-				
 			</select>
+      <input required name="name" placeholder="Ваше имя и фамилия" type="text">
+      <input required name="year" placeholder="Год рождения" type="number">
+      <input required name="team" placeholder="Команда (регион)" type="text">
 			<input required name="trainer" placeholder="Тренер" type="text">
 
 			<button class="button button_submit">Отправить заявку</button>
@@ -178,6 +191,30 @@
 		<div class="modal__descr">Ждем Вас на соревнованиях</div>
   </div>
 	</div>
+
+  <section class="calendar" id="calendar">
+    <div class="container">
+      <h2 class="title">Календарь соревнований</h2>
+      <div>
+        <img src="img/calendar.jpg" alt="calendar">
+      </div>
+    </div>
+  </section>
+
+  <section class="standards" id="standards">
+    <div class="container">
+      <h2 class="title">НОРМАТИВЫ</h2>
+      <p>Данная секция сайта находиться в разработке</p>
+    </div>
+  </section>
+
+  <section class="records" id="records">
+    <div class="container">
+      <h2 class="title">РЕКОРДЫ</h2>
+      <p>Данная секция сайта находиться в разработке</p>
+    </div>
+  </section>
+
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>

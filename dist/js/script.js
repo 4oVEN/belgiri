@@ -15,7 +15,9 @@ $(document).ready(function(){
     speed: 1200,
     autoplay: true,
     autoplaySpeed: 2000,
-    dots: true,
+    adaptiveHeight: true,
+    // fade: true,
+    // cssEase: 'linear'
   });
  
   // Modal
