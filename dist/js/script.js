@@ -16,8 +16,18 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 2000,
     adaptiveHeight: true,
-    // fade: true,
-    // cssEase: 'linear'
+    prevArrow: '<button type="button" class="slick-prev"><img src="../img/prev.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="../img/next.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          // dots: true,
+          arrows: false
+        }
+      }
+      
+    ]
   });
  
   // Modal
@@ -43,4 +53,15 @@ $(document).ready(function(){
     });
     return false;
   });
+
+
+    // Smooth scroll and pageup
+
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 1600){
+        $('.pageup').fadeIn();
+      } else {
+        $('.pageup').fadeOut();
+      }
+    });
 });
