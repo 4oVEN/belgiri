@@ -1,7 +1,16 @@
+@media (max-width: 768px){
+  .feed-form{
+    grid-template: repeat(2, 50px) / repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 550px){
   .modal__close{
     top: 7px;
     right: 0;
+  }
+  .feed-form{
+    grid-template: repeat(2, 50px) / repeat(1, 1fr);
   }
 }
 
