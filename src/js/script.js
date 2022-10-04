@@ -1,14 +1,17 @@
 const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      close = document.querySelector('.menu__close');
+      menu = document.querySelector('.menu');
+      // close = document.querySelector('.menu__close');
 
-hamburger.addEventListener('click', () => {
-  menu.classList.add('active');
-});
+      function toggleMenu() {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('active');
+      }
+      hamburger.addEventListener('click', toggleMenu);
+      menu.addEventListener('click', toggleMenu);
+      
 
-close.addEventListener('click', () => {
-  menu.classList.remove('active');
-});
+
+
 
 $(document).ready(function(){
   $('.carousel__inner').slick({
