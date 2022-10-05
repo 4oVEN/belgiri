@@ -1,6 +1,5 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu');
-      // close = document.querySelector('.menu__close');
 
       function toggleMenu() {
         hamburger.classList.toggle('active');
