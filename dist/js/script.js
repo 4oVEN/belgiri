@@ -66,4 +66,27 @@ $(document).ready(function(){
         $('.pageup').fadeOut();
       }
     });
+
+    const runText = document.querySelector('#text');
+
+    const line = 'Напиши сообщение сюда...';
+    const speed = 100;
+
+    // for (let i = 0; i <= line.length; i++){
+    //   runText.value = line.substring(0, i);
+    // }
+
+    let i = 0;
+    function runLine(){
+      if(i++ < line.length){
+        runText.value = line.substring(0, i);
+      }
+      else {
+        runText.value = '';
+        i = 0;
+      }
+      done = setTimeout(runLine, speed);
+    }
+    runLine();
+    
 });
