@@ -93,9 +93,9 @@
         <div>
           <img src="img/slide4.jpg" alt="slide">
         </div>
-        <div>
+        <!-- <div>
           <img src="img/slide5.jpg" alt="slide">
-        </div>
+        </div> -->
         <div>
           <img src="img/slide6.jpg" alt="slide">
         </div>
@@ -182,7 +182,10 @@
          <input required name="year" placeholder="Год рождения" type="number">
          <input required name="team" placeholder="Команда (регион)" type="text">
          <input required name="trainer" placeholder="Тренер" type="text">
-   
+         <div class="contacts__policy">
+          <input required type="checkbox">
+          <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+        </div>
          <button class="button button_submit">Отправить заявку</button>
          </form>
          <div class="map">
@@ -276,7 +279,7 @@
 						</a>
             <a class="contacts__link" href="mailto:belgiri@yandex.by">belgiri@yandex.by</a>
 					</div>
-					<div class="title title_fz14 contacts__text">Или оставьте ваши данные и мы свяжемcя с вами:</div>
+					<div class="title title_fz14 contacts__text">Или оставьте сообщение и мы свяжемcя с вами:</div>
 					<form class="contacts__form" action="#">
 						<div class="contacts__input">
 							<input required name="name" id="name" type="text">
@@ -287,7 +290,7 @@
 							<label for="email">Ваша почта</label>
 						</div>
 						<div class="contacts__textarea">
-							<textarea name="text" id="text" onfocus="clearTimeout(done); this.value = '';"></textarea>
+							<textarea name="text" id="text"></textarea>
 							<label for="text">Ваше сообщение</label>
 						</div>
 						<div class="contacts__triggers">

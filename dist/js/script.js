@@ -40,7 +40,7 @@ $(document).ready(function(){
     $('.overlay, #application, #thanks').fadeOut('slow');
   });
 
-  $('form').submit(function(e){
+  $('.feed-form').submit(function(e){
     e.preventDefault();
     $.ajax({
       type: 'POST',
@@ -56,7 +56,19 @@ $(document).ready(function(){
     return false;
   });
 
+  $('.contacts__form').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: 'mailer/smart.php',
+      data: $(this).serialize()
+    }).done(function(){
+      $(this).find('input', 'textarea').val('');
 
+      $('form').trigger('reset');
+    })
+    return false;
+  });
     // Smooth scroll and pageup
 
     $(window).scroll(function(){
@@ -69,8 +81,8 @@ $(document).ready(function(){
 
     const runText = document.querySelector('#text');
 
-    const line = 'Напиши сообщение сюда...';
-    const speed = 100;
+    const line = 'Напиши сообщение сюда.....';
+    const speed = 150;
 
     // for (let i = 0; i <= line.length; i++){
     //   runText.value = line.substring(0, i);
@@ -88,5 +100,10 @@ $(document).ready(function(){
       done = setTimeout(runLine, speed);
     }
     runLine();
+
+    runText.onfocus = function(){
+      clearTimeout(done); 
+      this.value = '';
+    }
     
 });
