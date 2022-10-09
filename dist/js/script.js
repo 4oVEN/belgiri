@@ -81,7 +81,7 @@ $(document).ready(function(){
 
     const runText = document.querySelector('#text');
 
-    const line = 'Напиши сообщение сюда.....';
+    const line = 'Напишите сообщение здесь.....';
     const speed = 150;
 
     // for (let i = 0; i <= line.length; i++){

@@ -7,9 +7,10 @@
     padding: 0 35px 0 52px;
     display: grid;
     grid-template-columns: 400px 585px;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   &__photo{
+    align-self: center;
     img{
       width: 100%;
     }
@@ -24,7 +25,7 @@
     margin-top: 20px;
   }
   &__link{
-    margin-right: 25px;
+    margin-right: 22px;
     color: #000;
     &:hover{
       color: #000;
@@ -36,6 +37,10 @@
       max-width: 30px;
       max-height: 30px;
     }
+  }
+  &__email{
+    margin-top: 20px;
+    display: inline-block;
   }
   &__form{
     margin-top: 30px;
