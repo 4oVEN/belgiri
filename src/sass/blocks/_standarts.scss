@@ -1,7 +1,24 @@
 .standards{
+  margin-bottom: 20px;
+  table{
+    border-collapse: separate;
+    border-spacing: 2px;
+    border: 1px solid black;
+  }
   &__table{
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-around;
+    margin-bottom: 20px;
     th{
       padding: 12px 20px;
+      border: 1px solid black;
+      text-align: center;
+      
     }
+  }
+  &__text{
+    text-align: justify;
+    margin-bottom: 0;
   }
 }

@@ -57,6 +57,16 @@
       grid-template: 45px 190px 45px / repeat(2, 250px);
     }
   }
+  .standards{
+    &__table{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      th{
+        padding: 8px 12px;
+      }
+    }
+  }
 }
 
 @media (max-width: 550px){
